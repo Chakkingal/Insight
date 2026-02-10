@@ -4,15 +4,11 @@
 const DATA = {
   currency: "₹",
 
-  expenseCSV:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTb3NBRMu37zvWtTBeiDzHD1h15mhU2UmH8kKYofKbfPQ3QIZRKhYjiZWH41xQfURepbIE7W2pF0Nt-/pub?gid=980089094&single=true&output=csv",
-
-  receiptCSV:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTb3NBRMu37zvWtTBeiDzHD1h15mhU2UmH8kKYofKbfPQ3QIZRKhYjiZWH41xQfURepbIE7W2pF0Nt-/pub?gid=2012196942&single=true&output=csv",
-
-  contraCSV:
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vTb3NBRMu37zvWtTBeiDzHD1h15mhU2UmH8kKYofKbfPQ3QIZRKhYjiZWH41xQfURepbIE7W2pF0Nt-/pub?gid=1047506309&single=true&output=csv"
+  expenseCSV: "/api/expense",
+  receiptCSV: "/api/receipt",
+  contraCSV: "/api/contra"
 };
+
 
 const currencySymbol = DATA.currency;
 
@@ -1452,6 +1448,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // INITIAL LOAD
 // ==========================================================
 loadAllData();
+
 
 
 
