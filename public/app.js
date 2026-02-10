@@ -131,16 +131,25 @@ function monthYearToDate(label) {
 // ==========================================================
 // CSV PARSER
 // ==========================================================
-function parseCSV(url) {
-  return new Promise((resolve, reject) => {
-    Papa.parse(url, {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
-      complete: (results) => resolve(results.data),
-      error: (err) => reject(err)
-    });
-  });
+// function parseCSV(url) {
+//   return new Promise((resolve, reject) => {
+//     Papa.parse(url, {
+//       download: true,
+//       header: true,
+//       skipEmptyLines: true,
+//       complete: (results) => resolve(results.data),
+//       error: (err) => reject(err)
+//     });
+//   });  
+// }
+async function parseCSV(url) {
+  const res = await fetch(url);
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch: " + url);
+  }
+
+  return await res.json();
 }
 
 // ==========================================================
@@ -1448,6 +1457,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // INITIAL LOAD
 // ==========================================================
 loadAllData();
+
 
 
 
