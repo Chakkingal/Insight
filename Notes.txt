@@ -1,0 +1,11 @@
+first before start working
+
+git pull origin main
+
+
+After saving 
+
+
+git add .
+git commit -m "test from vscode"
+git push origin main
