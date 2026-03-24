@@ -9,7 +9,7 @@ const DATA = {
   contraCSV: "/api/contra"
 };
 
-
+console.log("oF2zReEC31a")
 const currencySymbol = DATA.currency;
 
 let expenseData = [];
