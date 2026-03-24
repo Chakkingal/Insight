@@ -19,7 +19,7 @@ const SHEETS = {
   contraCSV:
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vTb3NBRMu37zvWtTBeiDzHD1h15mhU2UmH8kKYofKbfPQ3QIZRKhYjiZWH41xQfURepbIE7W2pF0Nt-/pub?gid=1047506309&single=true&output=csv"
 };
-
+Console.log("erlMS%;/5XAz")
 // Serve frontend
 app.use(express.static(path.join(__dirname, "public")));
 
